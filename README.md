@@ -1,2 +1,5 @@
-# Android_Mobile_Framework
-This framework is developed for a New app.It it does the following functionalities- Open the App, Select single/multiple items, Swipe/Scroll on the page, Zoom/Pinch, Click on the Link  and play a video based  on  parameters  passed  from XLS & Properties files, Generate Extent Reports & Test Logs, Capture Screen Shot, Emails  Reports via Jenkins
+This Framework developed for a Hybrid App which does the following - Opens the App, Selects item from Menu ,
+Swipe/Scroll on the page ,Selects text and  plays video based  on  parameters  passed  in XLS & 
+Properties files, Generates Extent/XLST Reports & Test Logs, Captures Screen Shot, Emails Reports via Jenkins.
+
+

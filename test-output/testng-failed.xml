@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SuiteName]">
+  <test name="cnbc(failed)">
+    <classes>
+      <class name="com.Mobile_Framework.testcases.videos">
+        <methods>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.Mobile_Framework.testcases.videos -->
+      <class name="com.Mobile_Framework.testcases.market">
+        <methods>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.Mobile_Framework.testcases.market -->
+      <class name="com.Mobile_Framework.testcases.News">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="TestA" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Mobile_Framework.testcases.News -->
+    </classes>
+  </test> <!-- cnbc(failed) -->
+</suite> <!-- Failed suite [SuiteName] -->

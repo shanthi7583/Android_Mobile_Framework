@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SuiteName">
+              <span class="suite-name border-failed">SuiteName</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SuiteName">
+                    <span>C:\Users\nikil kaarthi\Downloads\Mobile_Framework\src\test\java\com\Mobile_Framework\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SuiteName">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SuiteName">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SuiteName">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SuiteName">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SuiteName">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SuiteName">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods failed suite-SuiteName"> (hide)</a> <!-- hide-methods failed suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods failed suite-SuiteName"> (show)</a> <!-- show-methods failed suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content failed suite-SuiteName">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.Mobile_Framework.testcases.News" hash-for-method="TestA({News=news_xpath, NEWSCLICK=topnews_xpath, TOP NEWS=drawer2_id, Runmode=Y})">TestA({News=news_xpath, NEWSCLICK=topnews_xpath, TOP NEWS=drawer2_id, Runmode=Y})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SuiteName -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SuiteName" class="hide-methods passed suite-SuiteName"> (hide)</a> <!-- hide-methods passed suite-SuiteName -->
+                      <a href="#" panel-name="suite-SuiteName" class="show-methods passed suite-SuiteName"> (show)</a> <!-- show-methods passed suite-SuiteName -->
+                    </span>
+                    <div class="method-list-content passed suite-SuiteName">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.Mobile_Framework.testcases.SendMail" hash-for-method="SendMail">SendMail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.Mobile_Framework.testcases.market" hash-for-method="TestB({MERVAL=MERVAL_xpath, Runmode=Y, Index=index_xpath, Market=Market_xpath})">TestB({MERVAL=MERVAL_xpath, Runmode=Y, Index=index_xpath, Market=Market_xpath})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SuiteName" title="com.Mobile_Framework.testcases.videos" hash-for-method="TestC({Col2=C2, videos=videos_xpath, Runmode=Y})">TestC({Col2=C2, videos=videos_xpath, Runmode=Y})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SuiteName -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SuiteName" class="panel SuiteName">
+          <div class="suite-SuiteName-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.Mobile_Framework.testcases.News</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestA({News=news_xpath, NEWSCLICK=topnews_xpath, TOP NEWS=drawer2_id, Runmode=Y})">
+                  </a> <!-- TestA({News=news_xpath, NEWSCLICK=topnews_xpath, TOP NEWS=drawer2_id, Runmode=Y}) -->
+                  <span class="method-name">TestA</span>
+                  <span class="parameters">({News=news_xpath, NEWSCLICK=topnews_xpath, TOP NEWS=drawer2_id, Runmode=Y})</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Cannot stop and clear com.cnbc.client. Original error: Error executing adbExec. Original error: &apos;Command &apos;&apos;C:\\Users\\nikil kaarthi\\Downloads\\android-sdk-windows-1.6_r1\\platform-tools\\adb.exe&apos; -P 5037 -s LGL53BL6edee49d shell pm clear com.cnbc.client&apos; timed out after 20000ms&apos;; Stderr: &apos;&apos;; Code: &apos;null&apos; (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 71.80 seconds
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;Nikil&apos;, ip: &apos;192.168.254.5&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:37)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:161)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:170)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:82)
+	at com.Mobile_Framework.base.BaseTest.lauchApp(BaseTest.java:77)
+	at com.Mobile_Framework.testcases.News.TestA(News.java:29)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-failed -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Mobile_Framework.testcases.videos</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestC({Col2=C2, videos=videos_xpath, Runmode=Y})">
+                  </a> <!-- TestC({Col2=C2, videos=videos_xpath, Runmode=Y}) -->
+                  <span class="method-name">TestC</span>
+                  <span class="parameters">({Col2=C2, videos=videos_xpath, Runmode=Y})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Mobile_Framework.testcases.SendMail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SendMail">
+                  </a> <!-- SendMail -->
+                  <span class="method-name">SendMail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+          <div class="suite-SuiteName-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.Mobile_Framework.testcases.market</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestB({MERVAL=MERVAL_xpath, Runmode=Y, Index=index_xpath, Market=Market_xpath})">
+                  </a> <!-- TestB({MERVAL=MERVAL_xpath, Runmode=Y, Index=index_xpath, Market=Market_xpath}) -->
+                  <span class="method-name">TestB</span>
+                  <span class="parameters">({MERVAL=MERVAL_xpath, Runmode=Y, Index=index_xpath, Market=Market_xpath})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SuiteName-class-passed -->
+        </div> <!-- panel SuiteName -->
+        <div panel-name="test-xml-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\nikil kaarthi\Downloads\Mobile_Framework\src\test\java\com\Mobile_Framework\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;SuiteName&quot;&gt;
+  &lt;test name=&quot;cnbc&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Mobile_Framework.testcases.News&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- cnbc --&gt;
+  &lt;test name=&quot;market&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Mobile_Framework.testcases.market&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- market --&gt;
+  &lt;test name=&quot;videos&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Mobile_Framework.testcases.videos&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- videos --&gt;
+  &lt;test name=&quot;SendMail&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.Mobile_Framework.testcases.SendMail&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SendMail --&gt;
+&lt;/suite&gt; &lt;!-- SuiteName --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">cnbc (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">market (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">videos (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SendMail (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SuiteName');
+function tableData_SuiteName() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TestB')
+data.setCell(0, 2, 'com.Mobile_Framework.testcases.market')
+data.setCell(0, 3, 114856);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestC')
+data.setCell(1, 2, 'com.Mobile_Framework.testcases.videos')
+data.setCell(1, 3, 84316);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TestA')
+data.setCell(2, 2, 'com.Mobile_Framework.testcases.News')
+data.setCell(2, 3, 72328);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SendMail')
+data.setCell(3, 2, 'com.Mobile_Framework.testcases.SendMail')
+data.setCell(3, 3, 3417);
+window.suiteTableData['SuiteName']= { tableData: data, tableDiv: 'times-div-SuiteName'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-SuiteName">
+              </div> <!-- times-div-SuiteName -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SuiteName</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SuiteName" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Mobile_Framework.testcases.News</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestA({News=news_xpath, NEWSCLICK=topnews_xpath, TOP NEWS=drawer2_id, Runmode=Y})</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">72337 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Mobile_Framework.testcases.market</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestB({MERVAL=MERVAL_xpath, Runmode=Y, Index=index_xpath, Market=Market_xpath})</span>
+                <span class="method-start">72720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">187576 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Mobile_Framework.testcases.videos</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TestC({Col2=C2, videos=videos_xpath, Runmode=Y})</span>
+                <span class="method-start">187676 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">271992 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Mobile_Framework.testcases.SendMail</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SendMail</span>
+                <span class="method-start">272077 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

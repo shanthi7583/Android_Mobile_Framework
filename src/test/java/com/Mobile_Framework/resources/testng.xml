@@ -1,0 +1,27 @@
+<suite name="SuiteName">
+	
+	
+	<test name="cnbc" allow-return-values="true">
+		<classes>
+			<class name="com.Mobile_Framework.testcases.News" />
+		</classes>
+	</test>
+	
+	<test name="market" allow-return-values="true">
+		<classes>
+			<class name="com.Mobile_Framework.testcases.market" />
+		</classes>
+	</test>
+	<test name="videos" allow-return-values="true">
+		<classes>
+			<class name="com.Mobile_Framework.testcases.videos" />
+		</classes>
+	</test>
+	<test name="SendMail" allow-return-values="true">
+		<classes>
+			<class name="com.Mobile_Framework.testcases.SendMail" />
+		</classes>
+	</test>
+	
+</suite>
+
